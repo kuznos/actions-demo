@@ -44,6 +44,8 @@ jobs:
         uses: actions/checkout@v4      
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+      # - name: echo token
+      #   run: echo "${{ token }}"      
       - name: use node
         uses: actions/setup-node@v4
         with:
